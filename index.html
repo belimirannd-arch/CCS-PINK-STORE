@@ -1,0 +1,152 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCS Pink Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <nav class="navbar">
+            <h1>CCS Pink Store</h1>
+
+            <button class="menu-btn" id="menuBtn">☰</button>
+
+            <ul class="menu" id="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <div class="carrito">
+                🛍️ <span id="contador">0</span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- INICIO -->
+    <section class="inicio" id="inicio">
+        <div class="inicio-texto">
+            <p class="subtitulo">BIENVENIDA A NUESTRA TIENDA</p>
+            <h2>Pequeños detalles que hacen especial tu día</h2>
+            <p>
+                Encuentra papelería, accesorios y productos
+                de belleza en un solo lugar.
+            </p>
+            <a href="#productos" class="boton">Ver productos</a>
+        </div>
+
+        <div class="inicio-imagen">
+            <img src="https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?w=800"
+                 alt="Productos de papelería">
+        </div>
+    </section>
+
+    <!-- CATEGORÍAS -->
+    <section class="categorias">
+        <h2>Nuestras categorías</h2>
+
+        <div class="categoria-lista">
+            <div class="categoria">
+                <span>📚</span>
+                <h3>Papelería</h3>
+            </div>
+
+            <div class="categoria">
+                <span>🎀</span>
+                <h3>Accesorios</h3>
+            </div>
+
+            <div class="categoria">
+                <span>🌸</span>
+                <h3>Belleza</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section class="productos" id="productos">
+        <h2>Nuestros productos</h2>
+        <p class="descripcion">Descubre algunos de nuestros favoritos.</p>
+
+        <div class="productos-lista">
+
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=600"
+                     alt="Cuaderno">
+                <h3>Cuaderno aesthetic</h3>
+                <p>S/ 18.00</p>
+                <button onclick="agregarCarrito()">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600"
+                     alt="Accesorio">
+                <h3>Reloj casual</h3>
+                <p>S/ 35.00</p>
+                <button onclick="agregarCarrito()">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=600"
+                     alt="Producto de belleza">
+                <h3>Cuidado personal</h3>
+                <p>S/ 25.00</p>
+                <button onclick="agregarCarrito()">Agregar al carrito</button>
+            </div>
+
+            <div class="producto">
+                <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=600"
+                     alt="Productos de belleza">
+                <h3>Set de belleza</h3>
+                <p>S/ 30.00</p>
+                <button onclick="agregarCarrito()">Agregar al carrito</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="nosotros" id="nosotros">
+        <h2>Sobre CCS Pink Store</h2>
+        <p>
+            Somos una tienda virtual creada para ofrecer productos
+            prácticos y bonitos. Buscamos reunir diferentes artículos
+            en un solo espacio, brindando una experiencia de compra
+            sencilla y agradable.
+        </p>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contacto" id="contacto">
+        <h2>Contáctanos</h2>
+        <p>Gracias por visitar nuestra tienda.</p>
+        <p>Correo: contacto@ccspinkstore.com</p>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© 2026 CCS Pink Store - Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- BOTÓN FLOTANTE -->
+    <button class="boton-flotante" id="botonInfo">
+        ℹ
+    </button>
+
+    <div class="info" id="informacion">
+        <button class="cerrar" id="cerrarInfo">×</button>
+        <h3>¿Necesitas información?</h3>
+        <p>Estamos aquí para ayudarte.</p>
+        <p>Correo: contacto@ccspinkstore.com</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
